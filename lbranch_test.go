@@ -79,7 +79,7 @@ func TestLBranch_GetLatestBranches(t *testing.T) {
 		_, err = cmd.Output()
 
 		if err != nil {
-			t.Errorf("LBranch.GetLatestBranches unexpected error occured while deleting a test commit: %s", err)
+			t.Errorf("#%d LBranch.GetLatestBranches unexpected error occured while deleting a test commit: %s", i, err)
 		}
 	}
 }
