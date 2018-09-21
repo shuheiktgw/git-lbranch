@@ -12,7 +12,7 @@ import (
 const Name = "git-lbranch"
 
 // The current version of git-lbranch
-const Version = "0.0.3"
+const Version = "0.0.4"
 
 // The owner of gemer
 const Owner = "shuheiktgw"
