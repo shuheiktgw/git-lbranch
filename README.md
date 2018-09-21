@@ -1,6 +1,6 @@
 git-lbranch
 =====
-[![GitHub release](http://img.shields.io/github/release/shuheiktgw/git-lbranch.svg?style=flat-square)](https://github.com/shuheiktgw/git-lbranch/releases)
+[![GitHub release](http://img.shields.io/github/release/shuheiktgw/git-lbranch.svg?style=flat-square)](https://github.com/shuheiktgw/git-lbranch/releases/latest)
 [![Build Status](https://travis-ci.org/shuheiktgw/git-lbranch.svg?branch=master)](https://travis-ci.org/shuheiktgw/git-lbranch)
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 [![GoDoc](https://godoc.org/github.com/shuheiktgw/git-lbranch?status.svg)](https://godoc.org/github.com/shuheiktgw/git-lbranch)
