@@ -1,0 +1,20 @@
+language: go
+go:
+- 1.10.x
+- 1.11.x
+env:
+  global:
+    secure: vXLNaKPH+9C1DlUgDX2ETQyQ9D4C4lIkHaqfxgteH81VnxwPPW6t++vZz958x/CoZ+GorcFnsXLZaWCFEEiZOCYvuNB0NEXYc0kVB5n/z9xR60rplzwuNiJth8wxGEPsYUXtt1ZjYkG8bAWReUMGGXguLvw/Wn7JWYM6zldc/28xJHH32VyJYxDWpc3AJ44zcZDMwiSbGQaa6WY/dY7tjRsT9K+rT/7/g15Sri+tMEkWwmqSMMTo5b8cEZgdoE3USA275dQsTFObiguTlHDqr+YOl8Z7iFfJAQPjWQjvIhR5szdwgCReR6aG86fiLhGE2sdVkhfIRttypv5E04O4MV5zTxFy+pynxBp/TG4n4wcuYRlWVRpfSWglJUm9oeubY/X1BsmjF2x66ZBNjumI6ktQUYmK1Lw2Fa6CqxLFc0SaRxjJ4cu10oi5imnT1IuuwmJaCwUVEfrXOssJ+0GPTjQSKcdAkAeFtU2FHTwtHKArqCjuYZEye9MSH8TSWPQdL767E+3wvtYJGdLB64lMIrb0/53ZSKztDng/MCFTN1GkQVMF/EEBZrd3yJHIBhuX/zZl+vvxLTsBtjJKoaFTYTeRHyLb8i61lUTCdqsXDSqzJ8ze+OExazyH98r2Pwlfbpc/fSn9UksvZKbLSirJnBbVmgbXoOlfcXa1qVdVjp4=
+os:
+- osx
+before_deploy:
+- go get github.com/motemen/gobump/cmd/gobump
+- go get github.com/Songmu/goxz/cmd/goxz
+- go get github.com/tcnksm/ghr
+- go get github.com/shuheiktgw/ghbr
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: chmod +x scripts/deploy.sh && sh scripts/deploy.sh
+  on:
+    branch: master
